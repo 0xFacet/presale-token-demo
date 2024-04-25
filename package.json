@@ -1,0 +1,39 @@
+{
+  "name": "presale-token",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@0xfacet/component-library": "^1.0.10",
+    "@rainbow-me/rainbowkit": "^2.0.5",
+    "@tanstack/react-query": "^5.32.0",
+    "bignumber.js": "^9.1.2",
+    "date-fns": "^3.6.0",
+    "encoding": "^0.1.13",
+    "lodash": "^4.17.21",
+    "next": "14.2.3",
+    "pako": "^2.1.0",
+    "pino-pretty": "^11.0.0",
+    "react": "^18",
+    "react-dom": "^18",
+    "viem": "^2.9.26",
+    "wagmi": "^2.5.20"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.17.0",
+    "@types/node": "^20",
+    "@types/pako": "^2.0.3",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.3",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}
