@@ -8,7 +8,7 @@ Ensure you have Node.js and Yarn installed on your machine. This project uses Ya
 
 ## Environment Setup
 
-This project requires several environment variables to be set for proper operation. An `env.sample` file is included in the repository with example values:
+This project requires several environment variables to be set for proper operation. An `.sample.env` file is included in the repository with example values:
 
 ```env
 NEXT_PUBLIC_NETWORK="sepolia"
@@ -26,7 +26,7 @@ NEXT_PUBLIC_TOKEN_ADDRESS=""
 
 To set up your environment:
 
-1. Copy the `env.sample` file to a new file named `.env.local` in the root directory of your project.
+1. Copy the `.sample.env` file to a new file named `.env.local` in the root directory of your project.
 2. Modify the `NEXT_PUBLIC_PROJECT_ID` and `NEXT_PUBLIC_TOKEN_ADDRESS` in your `.env.local` file with the actual values required for your Wallet Connect project ID and token contract address.
 
 ## Installation
