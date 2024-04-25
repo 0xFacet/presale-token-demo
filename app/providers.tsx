@@ -29,7 +29,7 @@ const targetNetworkName =
 
 export const targetNetwork = { mainnet, sepolia }[targetNetworkName];
 
-const projectId = "20caa1a70b33e26ff511865a7993d1d0";
+const projectId = process.env.NEXT_PUBLIC_PROJECT_ID!;
 
 const connectors = connectorsForWallets(
   [
