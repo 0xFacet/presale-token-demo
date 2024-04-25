@@ -1,6 +1,6 @@
 # Presale-Token
 
-Welcome to the `presale-token` repository! This project is a Next.js application designed to interact with a blockchain for token presale activities. Before running the application, make sure to set up the environment variables properly.
+Welcome to the `presale-token` repository! This project is a Next.js application designed to demo interacting with the PresaleERC20 contract on Facet. Before running the application, make sure to set up the environment variables properly.
 
 ## Prerequisites
 
@@ -47,16 +47,13 @@ yarn dev
 
 This will launch the Next.js application in development mode. Visit `http://localhost:3000` in your browser to see the application. It will automatically reload if you make changes to the code.
 
-## Contributing
-
-We welcome contributions to the `presale-token` project. Please review the contribution guidelines for more information on how to contribute effectively.
-
 ## License
 
 This project is licensed under the [MIT License](LICENSE.md). You are free to use, modify, and distribute it under the terms of this license.
 
-## Support
+## Learn More
 
-For support and inquiries, open an issue in the repository or contact the project maintainers.
+To learn more about this stack, take a look at the following resources:
 
-Thank you for using or contributing to `presale-token`!
+- [Facet Documentation](https://docs.facet.org) - Learn how to build on Facet.
+- [Facet Discord](https://discord.gg/facet) - Join our community of builders!
