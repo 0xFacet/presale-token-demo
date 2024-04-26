@@ -42,13 +42,13 @@ export const formatTimestamp = (dateStr: string) => {
 
     let output = "";
     if (duration.days) {
-      output = `${duration.days}d ${duration.hours}h`;
+      output = `${duration.days}d ${duration.hours ?? 0}h`;
     } else if (duration.hours) {
-      output = `${duration.hours}h ${duration.minutes}m`;
+      output = `${duration.hours}h ${duration.minutes ?? 0}m`;
     } else if (duration.minutes) {
-      output = `${duration.minutes}m ${duration.seconds}s`;
+      output = `${duration.minutes}m ${duration.seconds ?? 0}s`;
     } else {
-      output = `${duration.seconds}s`;
+      output = `${duration.seconds ?? 0}s`;
     }
 
     return `in ${output}`;

@@ -125,6 +125,9 @@ export const BuyShares = () => {
   const teamSupply = maxSupply - tokensForPresale * BigInt(2);
   const teamPercentage = 100 - presalePercentage * 2;
 
+  const tokensPerShare = tokensForPresale / totalShares;
+  const tokensToClaim = ownedShares * tokensPerShare;
+
   return (
     <div className="flex flex-col gap-4">
       <Timer render={getCountdownString} />
@@ -177,7 +180,9 @@ export const BuyShares = () => {
         </>
       ) : (
         <div>
-          <Button onClick={claimTokens}>Claim Tokens</Button>
+          <Button onClick={claimTokens}>
+            Claim {formatTokenValue(tokensToClaim, 18, true)} Tokens
+          </Button>
         </div>
       )}
     </div>
