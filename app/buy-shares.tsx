@@ -3,7 +3,11 @@
 import { useCallMethod } from "@/hooks/useCallMethod";
 import { usePoll } from "@/hooks/usePoll";
 import { sendStaticCall } from "@/utils/facet/contracts";
-import { formatTimestamp, formatTokenValue } from "@/utils/formatter";
+import {
+  formatTimestamp,
+  formatTokenValue,
+  truncateMiddle,
+} from "@/utils/formatter";
 import { Button } from "@0xfacet/component-library";
 import { Input, Label } from "@0xfacet/component-library/ui";
 import { useCallback, useState } from "react";
@@ -132,6 +136,16 @@ export const BuyShares = () => {
   return (
     <div className="flex flex-col gap-4">
       <Timer render={getCountdownString} />
+      <div>
+        {"Token Contract: "}
+        <Link
+          target="_blank"
+          href={`https://sepolia.facetscan.com/address/${tokenAddress}`}
+          className="text-white"
+        >
+          {truncateMiddle(tokenAddress, 8, 8)}
+        </Link>
+      </div>
       <div>
         <div>Max Supply: {formatTokenValue(maxSupply, 18, true)}</div>
         <div>
