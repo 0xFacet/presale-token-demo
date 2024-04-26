@@ -125,7 +125,8 @@ export const BuyShares = () => {
   const teamSupply = maxSupply - tokensForPresale * BigInt(2);
   const teamPercentage = 100 - presalePercentage * 2;
 
-  const tokensPerShare = tokensForPresale / totalShares;
+  const tokensPerShare =
+    totalShares > 0 ? tokensForPresale / totalShares : BigInt(0);
   const tokensToClaim = ownedShares * tokensPerShare;
 
   return (
